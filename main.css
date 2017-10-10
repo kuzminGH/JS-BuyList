@@ -12,25 +12,74 @@ body{
     margin: auto;
 }
 
-.bl-row {
+.bl-row, .bl-row2 {
     background: #cdcbcb;
     width:60%;
     padding-right:20px;
+    float:left;
+    box-sizing: border-box;
+}
+
+.bl-row2{
+    width: 40%;
 
 }
 
 .column1{
-    /*padding: 10px;*/
+    padding: 10px;
     background: white;
     border-radius: 0.2em;
 }
 
+.column2{
+    background: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
-.bl-row{
-    width: 100%;
-    float: left;
-    padding: 15px;
 
+.labelNotBought{
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.labelBought{
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+
+.allProducts{
+    padding:10px;
+
+
+}
+
+.allBoughtProducts{
+    padding: 10px;
+}
+
+.notBoughtProduct{
+    background: lightgray;
+    padding: 5px;
+    display:inline-block;
+    margin-bottom: 5px;
+}
+
+
+
+.labelSumOfProducts{
+    padding:2px;
+    padding-left:5px;
+    padding-right:5px;
+    margin-left:2px;
+    margin-right:2px;
+    border-radius: 3ch;
+    background: orange;
 }
 
 
