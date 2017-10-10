@@ -33,7 +33,9 @@ $(function () {
         node.find(".bl-minus").click(function () {
             sum = sum - 1;
             $(node.find(".bl-minus-disabled")).attr("class", "bl-minus");
-            if (sum == 0) sum = 1;
+            if (sum == 0) {
+                sum = 1;
+            }
             sumLabel.text(sum);
             node2.find(".labelSumOfProducts").text(sum);
         });
@@ -48,6 +50,8 @@ $(function () {
                 node.find(".name").attr("style","text-decoration: line-through;");
                 node2.find(".labelSumOfProducts").attr("style","text-decoration: line-through;");
                 node2.find(".productWasBought").attr("style","text-decoration: line-through;");
+                node2.remove();
+                listInSecondColumn2.append(node2);
             }
 
             else {
@@ -58,6 +62,8 @@ $(function () {
                 node.find(".name").attr("style","");
                 node2.find(".labelSumOfProducts").attr("style","");
                 node2.find(".productWasBought").attr("style","");
+                node2.remove();
+                listInSecondColumn1.append(node2);
             }
 
         });
